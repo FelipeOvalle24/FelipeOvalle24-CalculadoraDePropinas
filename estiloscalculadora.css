@@ -1,0 +1,157 @@
+body{
+    background: #64CCC5;
+    font-family: 'Fjalla One', sans-serif;
+    color: #0e4456;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+#container{
+    margin-top: 5%;
+    background: #DAFFFB;
+    width: 70%;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#container-calculo, #container-resultado{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2% 0;
+    border-radius: 10px;
+}
+
+#container-resultado{
+    background: #176B87;
+    display: flex;
+    flex-direction: column;
+}
+
+#container-calculo{
+    background: #c6eae6;
+    justify-content: space-around;
+}
+
+#monto-cuenta{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+
+#monto-cuenta label{
+    font-size: 140%;
+}
+
+#monto-cuenta input{
+    font-size: 100%;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+}
+
+input[type="text"]::placeholder{
+    color: rgb(201, 198, 198);
+}
+
+#porcentaje-propina{
+    width: 95%;
+}
+
+#porcentaje-propina button{
+    width: 110px;
+    height: 35px;
+    margin: 2%;
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+    background: #176B87;
+    border-radius: 5px;
+    border: solid 1px #0e4456;
+}
+
+#porcentaje-propina button:hover{
+    cursor: pointer;
+    background: #0e4456;
+}
+
+
+#resultados-totales, #reiniciar{
+    width: 95%;
+}
+
+#resultados-totales{
+    height: 70%;
+}
+
+#reiniciar{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+#reiniciar button{
+    width: 50%;
+    height: 90%;
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+    background: #0c4355;
+    border-radius: 5px;
+    border: solid 1px #0e4456;
+}
+
+#reiniciar button:hover{
+    cursor: pointer;
+    background: #0b3644;
+}
+
+
+@media screen and (max-width: 768px) {
+    header h1{
+        width: 80%;
+    }
+
+    #container{
+        margin-top: 15%;
+        background: #DAFFFB;
+        width: 95%;
+        height: auto;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #container-calculo, #container-resultado{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 2% 0;
+        border-radius: 10px;
+    }
+
+    #resultados-totales{
+        height: 70%;
+    }
+    
+    #reiniciar{
+        margin-top: 5%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+    }
+}
